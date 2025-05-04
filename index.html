@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        header {
+            margin-bottom: 2rem;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        #content {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 0.2rem;
+        }
+        footer {
+            margin-top: 2rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DOM Manipulation Demo</h1>
+        <p>Interact with the buttons below to see JavaScript in action!</p>
+    </header>
+    <main>
+        <section>
+            <div id="content">This is the initial content.</div>
+            <button onclick="changeText()">Change Text</button>
+            <button onclick="toggleStyle()">Toggle Highlight</button>
+            <button onclick="addElement()">Add Element</button>
+            <button onclick="removeElement()">Remove Element</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 DOM Demo. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
